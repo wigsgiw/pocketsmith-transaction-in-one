@@ -10,8 +10,12 @@ The app will be easy to access without passwords needing to be remembered. Long 
 
 ## Required config variables
 
-In dev, load these into a `secrets.yml` file. On Heroku, add these under your app's Settings page, under "Config Variables".
+In dev, load these into a `secrets.yml` file.
+
+If you deploy to Heroku, add these under your app's Settings page, under "Config Variables".
 
 - `pocketsmith_developer_key`: your PocketSmith Developer Key, used for authorisation.
 - `pocketsmith_transaction_account_id`: the transaction account ID that you want to create transactions for.
 - `pocketsmith_default_merchant`: the payee name / merchant that will be used when none is entered in the form (e.g. "Enter payee here").
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
