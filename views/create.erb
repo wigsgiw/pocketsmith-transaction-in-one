@@ -1,5 +1,5 @@
 <% if @resp.success? %>
-  <h3>Success!</h3>
+  <h2>Success!</h2>
   <pre>
     {
       id: <%= @resp.parsed_response['id'] %>,
@@ -10,7 +10,7 @@
     }
   </pre>
 <% else %>
-  <h3>Sorry, something went wrong.</h3>
+  <h2>Sorry, something went wrong.</h2>
   <pre>
     <%= @resp.parsed_response.inspect %>
   </pre>
