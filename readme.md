@@ -14,7 +14,7 @@ If you deploy to Heroku, add these under your app's Settings page, under "Config
 
 - `pocketsmith_developer_key`: your PocketSmith Developer Key, used for authorisation.
 - `pocketsmith_transaction_account_id`: the transaction account ID that you want to create transactions for.
-- `pocketsmith_default_merchant`: the payee name / merchant that will be used when none is entered in the form (e.g. "Enter payee here").
+- `pocketsmith_default_payee`: the payee name / merchant that will be used when none is entered in the form (e.g. "Enter payee here").
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 

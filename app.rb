@@ -19,7 +19,7 @@ end
 
 post '/create' do
   amount = params[:amount] == "" ? nil : params[:amount].to_f.abs * -1
-  payee  = params[:payee] == "" ? ENV['pocketsmith_default_merchant'] : params[:payee]
+  payee  = params[:payee] == "" ? ENV['pocketsmith_default_payee'] : params[:payee]
 
   transaction_params = {
     :date => Time.now,
