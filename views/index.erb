@@ -1,0 +1,17 @@
+<h1>Transaction-in-One</h1>
+
+<form action="/create" method="post">
+
+  <label for="amount">Debit Amount</label>
+  <input type="text" name="amount" id="amount_field">
+  <br/>
+  <label for="payee">Merchant (optional)</label>
+  <input type="text" name="payee" id="payee_field">
+  <br/>
+  <input type="submit" value="Save transaction" class="button-primary">
+  
+</form>
+
+<script>
+  document.getElementById('amount_field').focus();
+</script>

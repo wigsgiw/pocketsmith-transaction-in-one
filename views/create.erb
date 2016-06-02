@@ -1,0 +1,19 @@
+<% if @resp.success? %>
+  <h3>Success!</h3>
+  <pre>
+    {
+      id: <%= @resp.parsed_response['id'] %>,
+      amount: <%= @resp.parsed_response['amount'] %>,
+      payee: <%= @resp.parsed_response['payee'] %>,
+      date: <%= @resp.parsed_response['date'] %>
+
+    }
+  </pre>
+<% else %>
+  <h3>Sorry, something went wrong.</h3>
+  <pre>
+    <%= @resp.parsed_response.inspect %>
+  </pre>
+<% end %>
+
+<h4><a href="/">Go Back</a></h4>

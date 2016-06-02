@@ -1,0 +1,22 @@
+body {
+  margin-top:5rem;
+}
+form, input {
+  width:100%;
+}
+label {
+  font-size:1.2rem;
+  color:#999;
+}
+
+input#amount_field {
+  font-size:8rem;
+  height:10rem;
+  padding: 0.6rem 1rem;
+  text-align:right;
+}
+input.button-primary {
+  height:68px;
+  line-height:68px;
+  font-size:15px;
+}
