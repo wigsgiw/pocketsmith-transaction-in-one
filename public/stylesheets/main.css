@@ -15,8 +15,9 @@ input#amount_field {
   padding: 0.6rem 1rem;
   text-align:right;
 }
-input.button-primary {
+input.button-primary, a.button.button-primary {
   height:68px;
   line-height:68px;
   font-size:15px;
+  width:100%;
 }
