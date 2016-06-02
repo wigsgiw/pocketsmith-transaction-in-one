@@ -1,16 +1,14 @@
 # PocketSmith Transaction-in-One
 
-The general idea behind this little Sinatra app is to let you quickly enter manual transactions, into a nominated PocketSmith transaction account. Merchant is optional - all you need to enter is an amount if that's all you want to enter.
+The general idea behind this little Sinatra app is to let you quickly enter manual transactions, into a nominated PocketSmith transaction account. The app grew out of a need to keep a record of transactions for accounts which have slow transaction update speeds. Merchant is optional - all you need to enter is an amount if that's all you want to enter. Reconciliation with real transactions will be performed manually through the web app.
 
-Reconciliation will be performed manually through the web app. This app has grown out of need due to delayed transactions for Kiwibank credit cards, and offers a way for transactions to be noted while Kiwibank groans and creaks and eventually shows credit card transactions on their website.
+The app is configuration based, and environment variables are used to set your PocketSmith Developer Key and so on. Preference is for things to be done via these stored variables, instead of complicating the app with fetching and maintaining data caches.
 
-The app is configuration based, and environment variables are used to set your PocketSmith Developer Key and so on. Preference is for things to be done via these stored variables, instead of complicating the app with the logic required around fetching and maintining data caches.
-
-The app will be easy to access - no passwords to be remembered. Choosing long password-like 30-character URLs when deployed on Heroku would be recommended as a method of secure deployment initially. The idea is that the link is kept private between only people who require access. It's a balancing act, so **caveat emptor**!
+The app is easy to quickly access - no passwords to be remembered, save the web bookmark to your homescreen and you're good to go. Choosing long password-like 30-character URLs when deployed on Heroku would be recommended as a method of secure deployment initially. The idea is that the link is kept private between only people who require access. Ease of access versus security is a balancing act, so **caveat emptor**!
 
 ## Required config variables
 
-In dev, load these into a `secrets.yml` file.
+In development, put these into a `secrets.yml` file in the main app directory.
 
 If you deploy to Heroku, add these under your app's Settings page, under "Config Variables".
 
